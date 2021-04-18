@@ -15,7 +15,7 @@
 }
 
 .white {
-  color:#f5f5f5
+    color: #f5f5f5;
 }
 
 .profile-img {
@@ -67,4 +67,21 @@
 .highlight {
     background: #fddf7e;
     font-weight: 500;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: white;
+        color: black;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #292929;
+        color: #dcdcdc;
+    }
+    .highlight {
+        background: #f77e69;
+    }
 }
