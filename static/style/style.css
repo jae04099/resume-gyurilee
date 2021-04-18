@@ -1,3 +1,5 @@
+
+
 .resume {
     font-family: "Noto Sans KR", sans-serif;
     font-weight: 300;
@@ -7,7 +9,7 @@
 }
 
 .blue {
-    color: #3c78d8;
+    color: #818181;
 }
 
 .gray {
@@ -23,7 +25,7 @@
 }
 
 .footer-cover {
-    background-color: #f5f5f5;
+    background-color: #f5f5f52d;
     padding-left: 0;
     padding-right: 0;
     margin-top: 50px;
@@ -69,19 +71,37 @@
     font-weight: 500;
 }
 
-@media (prefers-color-scheme: light) {
-    body {
-        background: white;
-        color: black;
-    }
+a.theme-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 300;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #292929;
-        color: #dcdcdc;
+
+
+@media (prefers-color-scheme: light) {
+    
+    a {
+        color: rgb(78, 78, 78);
     }
     .highlight {
-        background: #f77e69;
+        background: #c4aaa54b;
     }
+
+
+} 
+
+@media (prefers-color-scheme: dark) {
+    
+    .blue {
+        color: #b1cfbe;
+    }
+    a {
+        color: white;
+    }
+    .highlight {
+        background: #f77e694b;
+    } 
+
 }

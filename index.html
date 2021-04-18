@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -29,7 +30,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.bundle.min.js"
         integrity="sha384-3ziFidFTgxJXHMDttyPJKDuTlmxJlwbSkojudK/CkRqKDOmeSbN6KLrGdrBQnT2n"
         crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="./static/style/style.css">
     <link rel="stylesheet" type="text/css" href="./static/style/YouTubePopUp.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,10 +45,17 @@
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
+    <link id="dark-theme-style" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="container resume">
+    <div class="container resume ">
+        <a
+        href="javascript:void()"
+        class="btn btn-lg ml-auto font-weight-bold theme-btn"
+        id="theme-toggler"
+        onclick="toggleTheme()"
+      ></a>
         <!-- Profile Start -->
         <div class="row mt-5">
             <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
@@ -113,12 +120,12 @@
                     개발부터 배워보자' 라는 생각으로 프론트엔드 개발을 시작하게 됐습니다.<br />
                     첫 시작은 가벼운 마음이었으나, 계속 공부를 할 수록 원했던 <span class="highlight">'전문가'가 될 수 있는 일 그 자체</span>였고 이에 매력을 느껴
                     <span class="highlight">'어제의 나 보다 잘하자'</span> 라는 신념 하에 좌절과 성취를 반복해가며 성장하고 있습니다.
-                </p>
+                </p><br />
                 <p><span class='highlight'>서비스에 대한 넘치는 아이디어를 실제로 구현</span>하는 것을 좋아합니다.<br /> 클릭을 5번 이상 해야 학기 성적이 뜨는 서비스를
                     한 번의 클릭 만으로 성적을 나오게 하고, 감정 다스리기가 필요한
                     사회에서 어떤
                     감정에 들었던 음악을 함께 기록할 수 있는 일기장을 만들었고, 한창 MBTI 심리테스트가 유행할 때, 사람들의 니즈를 정확히 파악해 실시간 검색어에도 오른 카페음료테스트를
-                    만들었습니다. </p>
+                    만들었습니다. </p><br />
                 <p>서비스 사용자들에게서 나오는 피드백은 개발자 본인만 원하는 개발이 아닌, 더 많은 사람들에게 기쁨과 편의를 제공하는 사람으로서 성장하고 싶은
                     욕심을
                     계속해서 키워
@@ -644,6 +651,7 @@
                     </div>
 
                     <script type="text/javascript" src="./static/script/jquery-1.12.1.min.js"></script>
+                    <script src="./static/script/theme.js"></script>
                     <script type="text/javascript" src="./static/script/YouTubePopUp.jquery.js"></script>
                     <script type="text/javascript">
                         jQuery(function () {
