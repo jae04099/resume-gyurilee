@@ -63,3 +63,8 @@
     top: 90%;
     transform: translate(-50%, -50%);
 }
+
+.highlight {
+    background: #f6df08;
+    font-weight: 500;
+}
